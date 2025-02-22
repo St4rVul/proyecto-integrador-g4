@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import Home from "./pages/home/Home";
 import Quiz from "./pages/quiz/Quiz";
 import NotFound from "./pages/not-found/NotFound";
-import Heart from "./pages/heart/Heart";
-import HighBloodPressure from "./pages/heart/high-blood-pressure/HighBloodPressure";
-import LowBloodPressure from "./pages/heart/low-blood-pressure/LowBloodPressure";
+import Higado from "./pages/higado/Higado";
+import HigadoGraso from "./pages/higado/higado-graso/HigadoGraso";
+import Cirrosis from "./pages/higado/cirrosis/Cirrosis"
 import "./index.css";
 import Layout from "./layout/Layout";
 // import App from "./App";
@@ -18,9 +18,9 @@ createRoot(document.getElementById("root")).render(
         <Route index path="/" element={<Home />} />
         <Route path="quiz" element={<Quiz />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="corazon" element={<Heart />}>
-          <Route path="presion-alta" element={<HighBloodPressure />} />
-          <Route path="presion-baja" element={<LowBloodPressure />} />
+        <Route path="higado" element={<Higado />}>
+          <Route path="higado-graso" element={<HigadoGraso />} />
+          <Route path="cirrosis" element={<Cirrosis />} />
         </Route>
       </Routes>
     </Layout>

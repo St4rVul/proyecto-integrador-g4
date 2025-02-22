@@ -7,7 +7,7 @@ const Home = () => {
 
   const handleClick = useCallback(() => {
     navigate("/corazon", {
-      state: { userData: { displayName: "Grupo 4" } },
+      state: { userData: { displayName: "Fabian Valencia" } },
     });
   }, [navigate]);
 

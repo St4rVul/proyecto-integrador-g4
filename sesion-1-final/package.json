@@ -14,6 +14,12 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "firebase": "^11.3.1",
+<<<<<<< Updated upstream
+=======
+    "framer-motion": "^12.4.7",
+    "gsap": "^3.12.7",
+    "lucide-react": "^0.475.0",
+>>>>>>> Stashed changes
     "mongodb": "^6.13.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

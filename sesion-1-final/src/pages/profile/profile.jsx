@@ -1,7 +1,7 @@
 import { useCallback, useEffect } from "react";
 import useAuthStore from "../../stores/use-auth-store";
 import { useNavigate } from "react-router";
-import "./Profile.css";
+import "./profile.css";
 
 const Profile = () => {
   const { userLooged, logout } = useAuthStore();

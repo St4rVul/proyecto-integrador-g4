@@ -10,14 +10,14 @@ const Header = () => {
           Inicio
         </NavLink>
         <div className="dropdown">
-          <NavLink to="/enfermedades" end>
+          <NavLink to="/higado" end>
             Enfermedades
           </NavLink>
           <div className="dropdown-content">
-            <NavLink to="/enfermedades/cirrosis">Cirrosis</NavLink>
-            <NavLink to="/enfermedades/cancer-hepatico">Cáncer Hepático</NavLink>
-            <NavLink to="/enfermedades/hepatitis">Hepatitis</NavLink>
-            <NavLink to="/enfermedades/higado-graso">Hígado Graso</NavLink>
+            <NavLink to="/higado/cirrosis">Cirrosis</NavLink>
+            <NavLink to="/higado/cancer-hepatico">Cáncer Hepático</NavLink>
+            <NavLink to="/higado/hepatitis">Hepatitis</NavLink>
+            <NavLink to="/higado/higado-graso">Hígado Graso</NavLink>
           </div>
         </div>
         <NavLink to="/quiz" end>

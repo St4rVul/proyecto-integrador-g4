@@ -8,6 +8,9 @@ import HigadoGraso from "./pages/higado/higado-graso/HigadoGraso";
 import Cirrosis from "./pages/higado/cirrosis/Cirrosis"
 import "./index.css";
 import Layout from "./layout/Layout";
+import Profile from "./pages/higado/profile/profile";
+
+
 // import App from "./App";
 
 createRoot(document.getElementById("root")).render(
@@ -16,11 +19,13 @@ createRoot(document.getElementById("root")).render(
     <Layout>
       <Routes>
         <Route index path="/" element={<Home />} />
+        <Route path = "/perfil" element = {<Profile />} />
         <Route path="quiz" element={<Quiz />} />
         <Route path="*" element={<NotFound />} />
         <Route path="higado" element={<Higado />}>
-          <Route path="higado-graso" element={<HigadoGraso />} />
-          <Route path="cirrosis" element={<Cirrosis />} />
+        <Route path="higado-graso" element={<HigadoGraso />} />
+        <Route path="cirrosis" element={<Cirrosis />} />
+          
         </Route>
       </Routes>
     </Layout>

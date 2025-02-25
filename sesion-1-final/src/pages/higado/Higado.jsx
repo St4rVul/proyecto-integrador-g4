@@ -6,11 +6,11 @@ const Higado = () => {
   const userData = location.state?.userData;
 
   return (
-    <div>
+    <>
       <h1>Enfermedades del Hígado</h1>
       <p>{userData?.displayName}</p>
       <Outlet />
-    </div>
+    </>
   );
 };
 

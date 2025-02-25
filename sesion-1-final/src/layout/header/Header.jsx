@@ -1,7 +1,11 @@
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import { FaUserCircle } from "react-icons/fa"; // Icono de usuario
 import "./Header.css";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="header">
       <img src="/miniBlanco.svg" alt="Logo" className="logo" />
@@ -15,7 +19,9 @@ const Header = () => {
           </NavLink>
           <div className="dropdown-content">
             <NavLink to="/enfermedades/cirrosis">Cirrosis</NavLink>
-            <NavLink to="/enfermedades/cancer-hepatico">Cáncer Hepático</NavLink>
+            <NavLink to="/enfermedades/cancer-hepatico">
+              Cáncer Hepático
+            </NavLink>
             <NavLink to="/enfermedades/hepatitis">Hepatitis</NavLink>
             <NavLink to="/enfermedades/higado-graso">Hígado Graso</NavLink>
           </div>
@@ -23,7 +29,22 @@ const Header = () => {
         <NavLink to="/quiz" end>
           Quiz
         </NavLink>
+        <NavLink to="/contacto" end>
+          Contacto
+        </NavLink>
       </nav>
+
+      {/* Icono de usuario con texto "Entrar" */}
+      <div className="user-menu" onClick={() => setMenuOpen(!menuOpen)}>
+        <FaUserCircle className="user-icon" />
+        <span className="user-text">Entrar</span> {/* Agregado el texto */}
+        {menuOpen && (
+          <div className="user-dropdown">
+            <NavLink to="/login">Iniciar sesión</NavLink>
+            <NavLink to="/register">Registrarse</NavLink>
+          </div>
+        )}
+      </div>
     </header>
   );
 };

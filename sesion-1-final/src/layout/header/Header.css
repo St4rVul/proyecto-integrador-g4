@@ -125,3 +125,21 @@
   background-color: #ffd700;
   color: #00586f;
 }
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px; /* Espacio entre el icono y el texto */
+}
+
+.user-text {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.user-menu:hover .user-text {
+  color: #ffd700;
+}

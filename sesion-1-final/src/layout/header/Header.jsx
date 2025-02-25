@@ -34,12 +34,10 @@ const Header = () => {
         </NavLink>
       </nav>
 
-      {/* Icono de usuario */}
-      <div className="user-menu">
-        <FaUserCircle
-          className="user-icon"
-          onClick={() => setMenuOpen(!menuOpen)}
-        />
+      {/* Icono de usuario con texto "Entrar" */}
+      <div className="user-menu" onClick={() => setMenuOpen(!menuOpen)}>
+        <FaUserCircle className="user-icon" />
+        <span className="user-text">Entrar</span> {/* Agregado el texto */}
         {menuOpen && (
           <div className="user-dropdown">
             <NavLink to="/login">Iniciar sesión</NavLink>

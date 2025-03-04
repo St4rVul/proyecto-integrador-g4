@@ -2,6 +2,7 @@ import { useCallback } from "react";
 import useQuizStore from "../../stores/use-quiz-store";
 import "./Quiz.css";
 
+
 const Quiz = () => {
   const { quiz, incrementQuizProgress } = useQuizStore();
 

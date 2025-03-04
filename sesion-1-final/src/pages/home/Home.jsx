@@ -1,3 +1,12 @@
+<<<<<<< Updated upstream
+=======
+import { useNavigate } from "react-router";
+import { useCallback } from "react";
+import "./Home.css"
+import { motion } from "framer-motion";
+
+
+>>>>>>> Stashed changes
 import "./Home.css";
 import { useCallback } from "react";
 import useAuthStore  from "../../stores/use-auth-store.js";

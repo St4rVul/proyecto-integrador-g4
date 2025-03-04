@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 
 .vercel
+
+# Ignorar archivos de configuración de entorno
+.env
+.env.local
